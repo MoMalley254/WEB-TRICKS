@@ -1,0 +1,156 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  #preloader {
+    background-color: white;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: 100;
+  }
+  .pre-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.pre-container span {
+    font-size: 120px;
+    font-family: "Poppins", sans-serif; 
+    font-weight: 800;
+    letter-spacing: 10px;
+    animation: flip 2.6s infinite linear;
+    transform-origin: 0 70%;
+    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+}
+
+@keyframes flip {
+    35% {
+        transform: rotateX(360deg);
+    }
+    100% {
+        transform: rotatex(360deg);
+    }
+}
+
+.pre-container>span:nth-child(even) {
+    background: linear-gradient(50deg, skyblue, orangered);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+.pre-container>span:nth-child(1) {
+    color: skyblue;
+}
+.pre-container>span:nth-child(2) {
+    animation-delay: 0.3s;
+    color: orangered;
+}
+
+.pre-container>span:nth-child(3) {
+    animation-delay: 0.6s;
+    color: skyblue;
+}
+
+.pre-container>span:nth-child(4) {
+    animation-delay: 0.9s;
+}
+
+.pre-container>span:nth-child(5) {
+    animation-delay: 1.2s;
+    background: linear-gradient(50deg, orangered, skyblue);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+.pre-container>span:nth-child(6) {
+    animation-delay: 1.5s;
+    color:skyblue;
+}
+
+.pre-container>span:nth-child(7) {
+    animation-delay: 1.8s;
+    background: linear-gradient(50deg, skyblue, orangered);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+.pre-container>span:nth-child(8) {
+    animation-delay: 2.1s;
+    color: orangered;
+}
+/**********MEDIA QUERIES*******/
+/***********MOBILE ********/
+@media (max-width: 400px) {
+    .pre-container span {
+      font-size: 35px;
+      letter-spacing: 2px;
+    }
+  }
+  /***********MOBILE ********/
+  
+  /***********MOBILE LANDSCAPE********/
+  @media (min-width: 410px) and (max-width: 600px) {
+    .pre-container span {
+        font-size: 45px;
+        letter-spacing: 4px;
+    }
+  }
+  /***********MOBILE LANDSCAPE********/
+  
+  /***********SMALL TABLET PORTRAIT***************/
+  @media (min-width: 610px) and (max-width: 700px) and (orientation: portrait) {
+    .pre-container span {
+        font-size: 60px;
+        letter-spacing: 4px;
+    }
+  }
+  /***********SMALL TABLET PORTRAIT***************/
+  
+  /***********SMALL TABLET LANSCAPE***************/
+  @media (min-width: 610px) and (max-width: 850px) and (orientation: landscape) {
+    .pre-container span {
+        font-size: 80px;
+        letter-spacing: 8px;
+    }
+  }
+  /***********SMALL TABLET LANDSCAPE***************/
+  
+  /***********BIG TABLET PORTRAIT***************/
+  @media (min-width: 720px) and (max-width: 850px) {
+    .pre-container span {
+        font-size: 80px;
+        letter-spacing: 6px;
+    }
+  }
+  /***********BIG TABLET PORTRAIT***************/
+  
+  /***********BIG TABLET LANDSCAPE***************/
+  @media (min-width: 860px) and (max-width: 1100px) {
+    .pre-container span {
+        font-size: 100px;
+        letter-spacing: 10px;
+    }
+  }
+  /***********BIG TABLET LANDSCAPE***************/
+  
+  /************DESKTOP**********************/
+  @media (min-width: 1370px) {
+    .pre-container span {
+        font-size: 140px;
+        letter-spacing: 15px;
+    }
+  }
+  /************DESKTOP**********************/
+  /**********MEDIA QUERIES*******/
+
+  
+ 
